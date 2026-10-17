@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xxybg.github.io/sitemap.xml

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>xxybg</title>
+  <subtitle>一个以初音未来（Hatsune Miku）为主题的博客：记录代码、声音与日常。</subtitle>
+  <link href="https://xxybg.github.io/atom.xml" rel="self"/>
+  <link href="https://xxybg.github.io/"/>
+  <id>https://xxybg.github.io/</id>
+  <updated>2026-10-17T08:40:00.000Z</updated>
+  <author><name>xxybg</name></author>
+  <entry>
+    <title>排版与组件指南</title>
+    <link href="https://xxybg.github.io/2026/10/17/%E6%8E%92%E7%89%88%E4%B8%8E%E7%BB%84%E4%BB%B6%E6%8C%87%E5%8D%97/"/>
+    <id>https://xxybg.github.io/2026/10/17/%E6%8E%92%E7%89%88%E4%B8%8E%E7%BB%84%E4%BB%B6%E6%8C%87%E5%8D%97/</id>
+    <updated>2026-10-17T08:40:00.000Z</updated>
+    <summary>主题支持的全部排版元素：标题、列表、引用、提示块、表格、代码高亮、图片。写文章前扫一眼。</summary>
+    <category term="Markdown"/>
+    <category term="指南"/>
+    <category term="主题"/>
+  </entry>
+  <entry>
+    <title>给博客换上初音未来的主题</title>
+    <link href="https://xxybg.github.io/2026/10/17/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BA%BF/"/>
+    <id>https://xxybg.github.io/2026/10/17/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BA%BF/</id>
+    <updated>2026-10-17T08:30:22.000Z</updated>
+    <summary>青绿 #39C5BB + 樱花粉 #FF7FAE，深色底上的发光屏幕感。这篇记录主题的设计取舍、页面结构，以及怎么改文案、写文章、发出去。</summary>
+    <category term="初音未来"/>
+    <category term="主题"/>
+    <category term="设计"/>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="https://xxybg.github.io/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://xxybg.github.io/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <updated>2026-10-17T08:15:18.000Z</updated>
+    <summary>从空白页到「有点好看」，中间隔着一次换主题的决定。这篇记录我为什么开博客，以及为什么最后选了初音。</summary>
+    <category term="随笔"/>
+    <category term="初音未来"/>
+    <category term="主题"/>
+  </entry>
+  <entry>
+    <title>Hello, World</title>
+    <link href="https://xxybg.github.io/2026/10/17/hello-world/"/>
+    <id>https://xxybg.github.io/2026/10/17/hello-world/</id>
+    <updated>2026-10-17T08:07:27.000Z</updated>
+    <summary>一切程序员的第一个输出都是 Hello, World。这篇是这个博客的第一个字节。</summary>
+    <category term="随笔"/>
+    <category term="初音未来"/>
+  </entry>
+</feed>
