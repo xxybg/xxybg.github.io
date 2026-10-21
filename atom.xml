@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>xxybg</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://xxybg.github.io/</id>
+  <link href="https://xxybg.github.io/" rel="alternate"/>
+  <link href="https://xxybg.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, xxybg</rights>
+  <subtitle>初音未来主题博客</subtitle>
+  <title>xxybg</title>
+  <updated>2026-10-21T13:30:00.000Z</updated>
+  <entry>
+    <author>
+      <name>xxybg</name>
+    </author>
+    <category term="主题" scheme="https://xxybg.github.io/categories/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://xxybg.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="Markdown" scheme="https://xxybg.github.io/tags/Markdown/"/>
+    <category term="指南" scheme="https://xxybg.github.io/tags/%E6%8C%87%E5%8D%97/"/>
+    <content>
+      <![CDATA[<p>这篇是自用的排版速查。所有样式都由主题的 <code>miku.css</code> 提供，写文章时不需要写任何 HTML。</p><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>正文里用 <code>##</code> 和 <code>###</code> 就够了。<code>##</code> 是带发光竖线的标题，会进右侧目录；<code>###</code> 是青绿色小标题。</p><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题（樱花粉）"><a href="#这是四级标题（樱花粉）" class="headerlink" title="这是四级标题（樱花粉）"></a>这是四级标题（樱花粉）</h4><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>无序列表：</p><ul><li>第一个</li><li>第二个，稍微长一点，看看换行之后的间距是否舒服</li><li>第三个</li></ul><p>有序列表：</p><ol><li>先做这个</li><li>再做那个</li><li>最后收尾</li></ol><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote><p>世界は、まだまだこれから。</p><p>世界才刚刚开始。</p></blockquote><h2 id="提示块"><a href="#提示块" class="headerlink" title="提示块"></a>提示块</h2><p>Butterfly 的 <code>note</code> 标签，四种颜色够用了。</p><div class="note tip flat"><p>小技巧</p><p>提示块里可以放<strong>行内样式</strong>、<code>代码</code>，以及<a href="/about/">链接</a>。</p></div><div class="note info flat"><p>说明</p><p><code>info</code> 是默认的青绿色。</p></div><div class="note warning flat"><p>注意</p><p><code>warning</code> 用来写需要小心的事情。</p></div><div class="note danger flat"><p>彩蛋</p><p>其实 <code>danger</code> 也能很可爱。</p></div><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table><thead><tr><th>元素</th><th>颜色</th><th>用途</th></tr></thead><tbody><tr><td>主色</td><td><code>#39C5BB</code></td><td>链接、按钮、强调</td></tr><tr><td>辅色</td><td><code>#FF7FAE</code></td><td>悬停、渐变末端</td></tr><tr><td>底色</td><td><code>#05090F</code></td><td>深色页面背景</td></tr><tr><td>正文</td><td><code>#E9F7F6</code></td><td>文字</td></tr></tbody></table><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>行内代码：<code>const miku = &#39;#39C5BB&#39;</code>。</p><p>带语言标记的代码块会自动套用 darker 主题：</p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 主题色常量</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">MIKU</span> = &#123;</span><br><span class="line">  <span class="attr">teal</span>: <span class="string">&#x27;#39C5BB&#x27;</span>,</span><br><span class="line">  <span class="attr">pink</span>: <span class="string">&#x27;#FF7FAE&#x27;</span>,</span><br><span class="line">  <span class="attr">night</span>: <span class="string">&#x27;#05090F&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">glow</span>(<span class="params">color, strength = <span class="number">0.45</span></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`0 0 32px -6px <span class="subst">$&#123;color&#125;</span>`</span> <span class="comment">// 发光阴影</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">glow</span>(<span class="variable constant_">MIKU</span>.<span class="property">teal</span>)</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建 + 本地预览</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate</span><br><span class="line">hexo server --port 4000</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">leek</span>(<span class="params">n=<span class="number">39</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;甩葱&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;葱&quot;</span> * n</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(leek())</span><br></pre></td></tr></table></figure><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;site&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xxybg&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;theme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;butterfly&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;skin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;miku-neon&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;#39C5BB&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;posts&quot;</span><span class="punctuation">:</span> <span class="number">4</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>下面这条线是主题自带的音符分隔线。</p><hr><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片会自动圆角、加描边、居中。</p><p><img src="/img/cover-2.jpg" alt="初音主题的封面素材"></p><h2 id="收尾"><a href="#收尾" class="headerlink" title="收尾"></a>收尾</h2><p>写完了。回到 <a href="/">首页</a> 看看效果。</p>]]>
+    </content>
+    <id>https://xxybg.github.io/2026/10/17/%E6%8E%92%E7%89%88%E4%B8%8E%E7%BB%84%E4%BB%B6%E6%8C%87%E5%8D%97/</id>
+    <link href="https://xxybg.github.io/2026/10/17/%E6%8E%92%E7%89%88%E4%B8%8E%E7%BB%84%E4%BB%B6%E6%8C%87%E5%8D%97/"/>
+    <published>2026-10-17T08:00:00.000Z</published>
+    <summary>主题支持的全部排版元素：标题、列表、引用、提示块、表格、代码高亮、图片。写文章前扫一眼。</summary>
+    <title>排版与组件指南</title>
+    <updated>2026-10-21T13:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>xxybg</name>
+    </author>
+    <category term="主题" scheme="https://xxybg.github.io/categories/%E4%B8%BB%E9%A2%98/"/>
+    <category term="初音未来" scheme="https://xxybg.github.io/tags/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5/"/>
+    <category term="主题" scheme="https://xxybg.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="设计" scheme="https://xxybg.github.io/tags/%E8%AE%BE%E8%AE%A1/"/>
+    <content>
+      <![CDATA[<p>站点最初是一片空白：只有几个 0 字节的 <code>index.html</code>，打开什么都没有。后来干脆整套重做，顺手把它做成了初音未来的样子。</p><p>这一版换了底座：Hexo 负责生成，Butterfly 负责骨架，我只需要把「初音」这件事写进皮肤里。</p><h2 id="三个设计决定"><a href="#三个设计决定" class="headerlink" title="三个设计决定"></a>三个设计决定</h2><p><strong>1. 主色只用一个。</strong> <code>#39C5BB</code> 是初音头发上的青绿。整个站点的强调色、链接、按钮、光晕、进度条，都从这一个颜色派生。少量樱花粉 <code>#FF7FAE</code> 只出现在「需要跳一下」的地方——渐变末端、悬停状态、本命曲卡片。</p><p><strong>2. 深色做底。</strong> 青绿在浅底上会显脏，在深色底上才会「发光」。所以默认是夜；右上角可以切到昼，浅色模式的青绿会自动压深一档（<code>#12A79E</code>）来保证对比度。</p><p><strong>3. 动效要克制。</strong> 背景的星线、卡片的入场、头像的缓慢旋转——都是低幅度、长周期的。系统开了「减弱动效」时全部停掉。</p><h2 id="页面一览"><a href="#页面一览" class="headerlink" title="页面一览"></a>页面一览</h2><table><thead><tr><th>页面</th><th>路径</th><th>说明</th></tr></thead><tbody><tr><td>首页</td><td><code>/</code></td><td>头图 + 最新文章 + 侧栏</td></tr><tr><td>文章页</td><td><code>/:年/:月/:日/:标题/</code></td><td>正文 + 目录 + 上下篇</td></tr><tr><td>归档</td><td><code>/archives/</code></td><td>按年 &#x2F; 月分组的时间轴</td></tr><tr><td>标签</td><td><code>/tags/</code></td><td>标签云与单个标签页</td></tr><tr><td>关于</td><td><code>/about/</code></td><td>自我介绍与配色卡</td></tr><tr><td>404</td><td><code>/404.html</code></td><td>走调的页面</td></tr></tbody></table><div class="note info flat"><p>地址没变：原有的 <code>/2026/10/17/hello-world/</code>、<code>/2026/10/17/我的第一篇博客/</code> 这些链接完全保留，收藏夹不会失效。</p></div><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><table><thead><tr><th>层</th><th>用什么</th></tr></thead><tbody><tr><td>生成</td><td>Hexo 8.1</td></tr><tr><td>主题</td><td>Butterfly 5.7（<code>themes/butterfly</code>）</td></tr><tr><td>皮肤</td><td><code>source/css/miku.css</code>：覆盖主题的 CSS 变量与组件</td></tr><tr><td>交互</td><td><code>source/js/miku.js</code>：花瓣、声波、主题色切换细节</td></tr><tr><td>素材</td><td><code>_work/make_art.py</code> 生成的横幅、封面、头像</td></tr><tr><td>依赖</td><td>全部本地化，不加载任何外部 CDN</td></tr></tbody></table><p>Butterfly 本身是「卡片 + 大图」的结构，青绿只要改几个变量就能铺满全站；真正花时间的是那些细节——导航栏的发光下划线、标签的胶囊形状、代码块的边框。</p><h2 id="写一篇新文章"><a href="#写一篇新文章" class="headerlink" title="写一篇新文章"></a>写一篇新文章</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;标题&quot;</span></span><br></pre></td></tr></table></figure><p>或者直接在 <code>source/_posts/</code> 里新建 <code>.md</code>，文件名就是 URL 里的别名：</p><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标题写这里</span><br><span class="line">date: 2026-10-18 21:00:00</span><br><span class="line">tags: [随笔, 初音未来]</span><br><span class="line">cover: /img/cover-1.jpg</span><br><span class="line"><span class="section">description: 首页卡片上显示的一段摘要。</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">正文从这里开始。</span><br></pre></td></tr></table></figure><p>然后构建、提交、推送：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;post: 新文章&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure><h2 id="改文案只要两个文件"><a href="#改文案只要两个文件" class="headerlink" title="改文案只要两个文件"></a>改文案只要两个文件</h2><p>站名、副标题、导航在 <code>_config.yml</code>；配色、头图、侧栏在 <code>_config.butterfly.yml</code>；细枝末节的样式在 <code>source/css/miku.css</code>。</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">xxybg</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">初音未来主题博客</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">一个披着初音未来青绿色的博客：记录代码、声音与日常。</span></span><br></pre></td></tr></table></figure><div class="note info flat"><p>39</p><p>日文里 3 读作「み」、9 读作「く」，合起来就是「ミク」。所以 39 是初音的代号，也是这个站点处处出现的彩蛋——徽标、统计数字、配色卡。</p></div><h2 id="剩下的"><a href="#剩下的" class="headerlink" title="剩下的"></a>剩下的</h2><p>文章还很少，慢慢写。主题已经就位，剩下的就是内容了。</p>]]>
+    </content>
+    <id>https://xxybg.github.io/2026/10/17/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BA%BF/</id>
+    <link href="https://xxybg.github.io/2026/10/17/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BA%BF/"/>
+    <published>2026-10-17T06:00:00.000Z</published>
+    <summary>青绿 #39C5BB + 樱花粉 #FF7FAE，深色底上的发光屏幕感。这篇记录皮肤的设计取舍、页面结构，以及怎么改文案、写文章、发出去。</summary>
+    <title>给博客换上初音未来的主题</title>
+    <updated>2026-10-21T13:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>xxybg</name>
+    </author>
+    <category term="随笔" scheme="https://xxybg.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://xxybg.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="初音未来" scheme="https://xxybg.github.io/tags/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5/"/>
+    <category term="主题" scheme="https://xxybg.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    <content>
+      <![CDATA[<p>我之前一直觉得写博客是件很郑重的事：要有值得写的东西，要有漂亮的排版，要有人看。于是什么都不写。空白页放了很久，<code>index.html</code> 一直是 0 字节。</p><p>后来想通了——先有个能写的地方，比什么都重要。</p><h2 id="为什么是初音未来"><a href="#为什么是初音未来" class="headerlink" title="为什么是初音未来"></a>为什么是初音未来</h2><p>因为她的颜色好看。</p><p>认真的说：<code>#39C5BB</code> 这个青绿色很特别。它不像常见的科技蓝那样冷，也不像薄荷绿那样轻，放在深色底上有种「屏幕在发光」的感觉。深夜里看着舒服，写代码的时候盯着也不刺眼。</p><p>再加上樱花粉 <code>#FF7FAE</code> 做点缀——两色撞在一起，就是初音的样子。</p><h2 id="这个博客会写什么"><a href="#这个博客会写什么" class="headerlink" title="这个博客会写什么"></a>这个博客会写什么</h2><ul><li><strong>代码</strong>：踩过的坑、想明白的事、抄来又改过的片段</li><li><strong>声音</strong>：在循环什么歌，为什么喜欢</li><li><strong>日常</strong>：一些不成体系的碎想法</li></ul><p>不追求更新频率，也不刻意追热点。想写了就写。</p><div class="note info flat"><p>「世界は、まだまだこれから。」——世界才刚刚开始。</p></div><h2 id="站点是怎么做的"><a href="#站点是怎么做的" class="headerlink" title="站点是怎么做的"></a>站点是怎么做的</h2><table><thead><tr><th>部分</th><th>做法</th></tr></thead><tbody><tr><td>生成器</td><td>Hexo 8</td></tr><tr><td>主题</td><td>Butterfly 5，深色底 + 青绿配色</td></tr><tr><td>皮肤</td><td>手写 CSS 覆盖（<code>source/css/miku.css</code>）</td></tr><tr><td>配色</td><td>主色 <code>#39C5BB</code>，辅色 <code>#FF7FAE</code></td></tr><tr><td>部署</td><td>GitHub Pages，<code>main</code> 分支根目录</td></tr></tbody></table><p>想换文案？改 <code>_config.yml</code> 一个文件就够了。</p><p>那就这样，第一篇写完了。</p>]]>
+    </content>
+    <id>https://xxybg.github.io/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://xxybg.github.io/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <published>2026-10-17T02:30:00.000Z</published>
+    <summary>从空白页到「有点好看」，中间隔着一次换主题的决定。这篇记录我为什么开博客，以及为什么最后选了初音。</summary>
+    <title>我的第一篇博客</title>
+    <updated>2026-10-21T13:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>xxybg</name>
+    </author>
+    <category term="随笔" scheme="https://xxybg.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://xxybg.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="初音未来" scheme="https://xxybg.github.io/tags/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5/"/>
+    <content>
+      <![CDATA[<p><code>Hello, World</code> —— 大概是全世界被敲得最多的一行字。</p><p>学一门新语言，第一件事就是让它开口说话。不管屏幕后面是控制台、浏览器还是别的什么，只要这四个字出来了，就说明这条路是通的。</p><p>这个博客也一样。它没有宏大的第一篇文章，只有一个最小的、能跑起来的字节。</p><h2 id="为什么是这四个字"><a href="#为什么是这四个字" class="headerlink" title="为什么是这四个字"></a>为什么是这四个字</h2><p>因为它足够坦白：我什么还都不会，但我已经开始了。</p><p>写代码的人都有一个通病——总想等准备好了再动手。可准备这件事是没有尽头的，语言会更新，框架会换代，审美会变。真正让一个东西存在的，往往不是准备，而是某个晚上忽然坐下来敲下的第一行。</p><h2 id="然后呢"><a href="#然后呢" class="headerlink" title="然后呢"></a>然后呢</h2><p>然后就有了后面的文章：为什么开博客、为什么选初音、这个站是怎么搭起来的。</p><p>如果你也有一片空白很久的 <code>index.html</code>，不如就从这一行开始：</p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello, World&#x27;</span>)</span><br></pre></td></tr></table></figure><p>♪ 欢迎来到这个世界。</p>]]>
+    </content>
+    <id>https://xxybg.github.io/2026/10/17/hello-world/</id>
+    <link href="https://xxybg.github.io/2026/10/17/hello-world/"/>
+    <published>2026-10-17T01:00:00.000Z</published>
+    <summary>一切程序员的第一个输出都是 Hello, World。这篇是这个博客的第一个字节。</summary>
+    <title>Hello, World</title>
+    <updated>2026-10-21T13:30:00.000Z</updated>
+  </entry>
+</feed>
